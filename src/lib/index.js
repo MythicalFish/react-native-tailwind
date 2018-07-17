@@ -1,20 +1,32 @@
 import React from 'react'
-import * as RN from 'react-native'
-import * as tw from './tailwind'
+import {
+  View as RnView,
+  ScrollView as RnScrollView,
+  Text as RnText,
+  Image as RnImage,
+  TextInput as RnTextInput,
+  TouchableOpacity as RnTouchableOpacity,
+  StyleSheet
+} from 'react-native'
+import tw from './tailwind'
 
-const buildComponent = Component => ({ className, ...rest }) => {
-  const props = { ...rest }
+const buildComponent = Component => ({ className, style, ...rest }) => {
+  const props = { ...rest, style: [] }
   if (className) {
     props.style = className.split(' ').map(c => tw[c])
+  }
+  if (style) {
+    const inline = StyleSheet.create({ style })
+    props.style.push(inline.style)
   }
   return <Component {...props} />
 }
 
-export const View = buildComponent(RN.View)
-export const ScrollView = buildComponent(RN.ScrollView)
-export const Text = buildComponent(RN.Text)
-export const Image = buildComponent(RN.Image)
-export const TextInput = buildComponent(RN.TextInput)
-export const TouchableOpacity = buildComponent(RN.TouchableOpacity)
+export const View = buildComponent(RnView)
+export const ScrollView = buildComponent(RnScrollView)
+export const Text = buildComponent(RnText)
+export const Image = buildComponent(RnImage)
+export const TextInput = buildComponent(RnTextInput)
+export const TouchableOpacity = buildComponent(RnTouchableOpacity)
 
 export default { View, ScrollView, Text, Image, TextInput, TouchableOpacity }
