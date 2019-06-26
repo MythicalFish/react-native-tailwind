@@ -10,7 +10,7 @@ Credit to [Taylor Bryant](https://github.com/taylorbryant/crna-tailwind) for ori
 ### 1. Install the package
 
 ```shell
-yarn install react-native-tailwind
+yarn add react-native-tailwind
 ```
 
 ### 2. Import the components
