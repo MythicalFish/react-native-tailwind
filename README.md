@@ -16,7 +16,7 @@ yarn add react-native-tailwind
 ### 2. Import the components
 
 ```js
-import { View, Text } from 'react-native-tailwind'
+import { View, Text } from "react-native-tailwind";
 ```
 
 ### 3. Use utility classes!
@@ -26,10 +26,10 @@ const RocketShip = ({ textForAliens }) => (
   <View className="flex-1 items-center justify-center bg-grey-darkest">
     <Text className="text-white p-4">{textForAliens}</Text>
   </View>
-)
+);
 ```
 
-To see which classes are supported, see [tailwind.js](https://github.com/MythicalFish/react-native-tailwind/blob/master/src/lib/tailwind.js).
+To see which classes are supported, see [tailwind.js](https://github.com/MythicalFish/react-native-tailwind/blob/master/src/tailwind.js).
 
 ---
 
