@@ -1,7 +1,6 @@
 # ⚡ React Native Tailwind ⚡
 
-The fantastic [Tailwind CSS](https://github.com/tailwindcss/tailwindcss), for React Native!  
-Credit to [Taylor Bryant](https://github.com/taylorbryant/crna-tailwind) for originally translating the classes over to RN.
+The fantastic [Tailwind CSS](https://github.com/tailwindcss/tailwindcss), for React Native!
 
 [![npm version](https://badge.fury.io/js/react-native-tailwind.svg)](https://badge.fury.io/js/react-native-tailwind)
 
@@ -23,7 +22,7 @@ import { View, Text } from "react-native-tailwind";
 
 ```js
 const RocketShip = ({ textForAliens }) => (
-  <View className="flex-1 items-center justify-center bg-grey-darkest">
+  <View className="flex-1 items-center justify-center bg-gray-200">
     <Text className="text-white p-4">{textForAliens}</Text>
   </View>
 );
