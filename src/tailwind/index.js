@@ -2,6 +2,7 @@ import colors from "./lib/colors";
 import borderWidth from "./lib/borderWidth";
 import position from "./lib/position";
 import spacing from "./lib/spacing";
+import width from "./lib/width";
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
@@ -473,88 +474,5 @@ export default StyleSheet.create({
   "tracking-wide": {
     letterSpacing: 0.8
   },
-  "w-1": {
-    width: 4
-  },
-  "w-2": {
-    width: 8
-  },
-  "w-3": {
-    width: 12
-  },
-  "w-4": {
-    width: 16
-  },
-  "w-6": {
-    width: 24
-  },
-  "w-8": {
-    width: 32
-  },
-  "w-10": {
-    width: 40
-  },
-  "w-12": {
-    width: 48
-  },
-  "w-16": {
-    width: 64
-  },
-  "w-24": {
-    width: 96
-  },
-  "w-32": {
-    width: 128
-  },
-  "w-48": {
-    width: 192
-  },
-  "w-64": {
-    width: 256
-  },
-  "w-auto": {
-    width: "auto"
-  },
-  "w-px": {
-    width: 1
-  },
-  "w-1/2": {
-    width: "50%"
-  },
-  "w-1/3": {
-    width: "33.33333%"
-  },
-  "w-2/3": {
-    width: "66.66667%"
-  },
-  "w-1/4": {
-    width: "25%"
-  },
-  "w-3/4": {
-    width: "75%"
-  },
-  "w-1/5": {
-    width: "20%"
-  },
-  "w-2/5": {
-    width: "40%"
-  },
-  "w-3/5": {
-    width: "60%"
-  },
-  "w-4/5": {
-    width: "80%"
-  },
-  "w-1/6": {
-    width: "16.66667%"
-  },
-  "w-5/6": {
-    width: "83.33333%"
-  },
-  "w-full": {
-    width: "100%"
-  },
-  "w-screen": {
-    width: "100vw"
-  }
+  ...width
 });
