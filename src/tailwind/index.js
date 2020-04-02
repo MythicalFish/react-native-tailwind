@@ -350,10 +350,16 @@ export default StyleSheet.create({
     lineHeight: 1
   },
   "leading-tight": {
-    lineHeight: 1
+    lineHeight: 1.25
+  },
+  "leading-snug": {
+    lineHeight: 1.375
   },
   "leading-normal": {
-    lineHeight: 1
+    lineHeight: 1.5
+  },
+  "leading-relaxed": {
+    lineHeight: 1.625
   },
   "leading-loose": {
     lineHeight: 2
