@@ -28,7 +28,7 @@ const RocketShip = ({ textForAliens }) => (
 );
 ```
 
-To see which classes are supported, see [tailwind.js](https://github.com/MythicalFish/react-native-tailwind/blob/master/src/tailwind.js).
+To see which classes are supported, see [tailwind.js](https://github.com/MythicalFish/react-native-tailwind/blob/master/src/tailwind/index.js).
 
 ---
 
