@@ -3,6 +3,7 @@ import borderWidth from "./lib/borderWidth";
 import position from "./lib/position";
 import spacing from "./lib/spacing";
 import width from "./lib/width";
+import flex from "./lib/flex";
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
@@ -175,90 +176,7 @@ export default StyleSheet.create({
   hidden: {
     display: "none"
   },
-  flex: {
-    display: "flex"
-  },
-  "flex-row": {
-    flexDirection: "row"
-  },
-  "flex-row-reverse": {
-    flexDirection: "row-reverse"
-  },
-  "flex-col": {
-    flexDirection: "column"
-  },
-  "flex-col-reverse": {
-    flexDirection: "column-reverse"
-  },
-  "flex-wrap": {
-    flexWrap: "wrap"
-  },
-  "flex-no-wrap": {
-    flexWrap: "nowrap"
-  },
-  "items-start": {
-    alignItems: "flex-start"
-  },
-  "items-end": {
-    alignItems: "flex-end"
-  },
-  "items-center": {
-    alignItems: "center"
-  },
-  "items-baseline": {
-    alignItems: "baseline"
-  },
-  "items-stretch": {
-    alignItems: "stretch"
-  },
-  "self-auto": {
-    alignSelf: "auto"
-  },
-  "self-start": {
-    alignSelf: "flex-start"
-  },
-  "self-end": {
-    alignSelf: "flex-end"
-  },
-  "self-center": {
-    alignSelf: "center"
-  },
-  "self-stretch": {
-    alignSelf: "stretch"
-  },
-  "justify-start": {
-    justifyContent: "flex-start"
-  },
-  "justify-end": {
-    justifyContent: "flex-end"
-  },
-  "justify-center": {
-    justifyContent: "center"
-  },
-  "justify-between": {
-    justifyContent: "space-between"
-  },
-  "justify-around": {
-    justifyContent: "space-around"
-  },
-  "content-center": {
-    alignContent: "center"
-  },
-  "content-start": {
-    alignContent: "flex-start"
-  },
-  "content-end": {
-    alignContent: "flex-end"
-  },
-  "content-between": {
-    alignContent: "space-between"
-  },
-  "content-around": {
-    alignContent: "space-around"
-  },
-  "flex-1": {
-    flex: 1
-  },
+  ...flex,
   "font-sans": {
     fontFamily:
       "system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif"
