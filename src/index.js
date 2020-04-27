@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import tw from "./tailwind";
 
-const buildComponent = Component => ({ className, style, ...rest }) => {
+export const buildComponent = Component => ({ className, style, ...rest }) => {
   const props = { ...rest, style: [] };
   if (className) {
     props.style = className.split(" ").map(c => tw[c]);
