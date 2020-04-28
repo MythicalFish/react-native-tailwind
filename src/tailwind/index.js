@@ -68,6 +68,9 @@ export default StyleSheet.create({
   "h-4": {
     height: 16,
   },
+  "h-5": {
+    height: 20,
+  },
   "h-6": {
     height: 24,
   },
@@ -82,6 +85,9 @@ export default StyleSheet.create({
   },
   "h-16": {
     height: 64,
+  },
+  "h-20": {
+    height: 80,
   },
   "h-24": {
     height: 96,

@@ -12,12 +12,15 @@ import tw from "./tailwind";
 
 export const buildComponent = Component => ({ className, style, ...rest }) => {
   const props = { ...rest, style: [] };
+
   if (className) {
     props.style = className.split(" ").map(c => tw[c]);
   }
   if (style) {
-    const inline = StyleSheet.create({ style });
-    props.style.push(inline.style);
+    // 'style' can be either an object or array.
+    const inline = StyleSheet.flatten([ style ].flat());
+
+    props.style.push(inline);
   }
   return <Component {...props} />;
 };
