@@ -6,6 +6,7 @@ import position from "./lib/position";
 import spacing from "./lib/spacing";
 import width from "./lib/width";
 import flex from "./lib/flex";
+import grid from "./lib/grid";
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
@@ -56,6 +57,7 @@ export default StyleSheet.create({
   "font-black": {
     fontWeight: "900",
   },
+  ...grid,
   "h-1": {
     height: 4,
   },
